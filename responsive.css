@@ -4540,14 +4540,14 @@
         flex-direction: column;
         justify-content: normal;
         align-items: center;
-        gap: 40px;
-        height: 1000px;
+        gap: 70px;
+        height: 1050px;
     }
 
     .community-title {
         width: 350px;
         text-align: left;
-        padding-top: 60px;
+        padding-top: 30px;
     }
 
     .community-title br {
@@ -6705,8 +6705,9 @@
         justify-content: center;
         align-items: center;
         gap: 70px;
-        padding-top: 0px;
-        height: 950px;
+        margin-top: 50px;
+        padding-top: 50px;
+        height: 1100px;
     }
 
     .community-title {
@@ -6766,8 +6767,8 @@
         justify-content: normal;
         align-items: center;
         gap: 100px;
-        height: 875px;
-        margin-top: 200px;
+        height: 1000px;
+        margin-top: 150px;
         padding-bottom: 60px;
         background-color: rgb(231, 240, 216, 0.8);
     }
@@ -8598,6 +8599,7 @@
     .benefits-title {
         padding: 100px 0px 70px 0px;
         width: 600px;
+        margin: auto;
     }
 
     .benefits-title br {
@@ -8754,8 +8756,8 @@
         justify-content: center;
         align-items: center;
         gap: 70px;
-        padding-top: 75px;
-        height: 850px;
+        padding-top: 125px;
+        height: 1050px;
     }
 
     .community-title {
@@ -10877,7 +10879,7 @@
 
     .benefits-title {
         padding: 100px 0px 70px 0px;
-        margin-left: 0;
+        margin: auto;
         text-align: center;
     }
 
@@ -11028,8 +11030,8 @@
         justify-content: center;
         align-items: center;
         gap: 110px;
-        padding-top: 0px;
-        height: 600px;
+        padding-top: 20px;
+        height: 750px;
     }
 
     .community-title {
@@ -11083,12 +11085,17 @@
         background-color: rgb(231, 240, 216, 0.8);
     }
 
+    .apply-title-content {
+        width: 400px;
+        margin-left: 30px;
+    }
+
     .apply-image {
-        width: 500px;
+        width: 450px;
     }
 
     .apply-image img {
-        height: 70%;
+        height: 75%;
         width: 70%;
         border-radius: 20px;
         margin-top: -70px;
