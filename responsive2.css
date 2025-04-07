@@ -271,7 +271,8 @@
     
     .hero-picture {
         width: 575px;
-        height: 450px;
+        /* height: 450px; */
+        height: auto;
         border-radius: 12px;
     }
     
@@ -309,7 +310,7 @@
     
     .hero-picture-case-studies {
         width: 579px;
-        height: 530px;
+        height: auto;
         border-radius: 20px;
     }
     
@@ -331,7 +332,7 @@
     
     .hero-picture-career img {
         width: 575px;
-        height: 450px;
+        height: auto;
         border-radius: 20px;
     }
     
@@ -361,7 +362,7 @@
 
     .hero-picture-ourteam {
         width: 600px;
-        height: 410px;
+        height: auto;
         border-radius: 12px;
     }
     
@@ -426,10 +427,6 @@
         left: 0px;
     }
 
-    .capabilities-icon {
-        text-align: center;
-    }
-
     .capabilities-card img {
         width: 70px;
         height: 70px;
@@ -465,7 +462,7 @@
         font-weight: bold;
     }
 
-    .card-text img {
+    .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
         padding-left: 5px;
@@ -1034,10 +1031,9 @@
         position: relative;
     }
 
-    .case-studies-card img {
+    .case-studies-card .case-studies-img {
         height: 220px;
         width: 340px;
-        padding-bottom: 30px;
     }
 
     .case-studies-card .aquisition-button {
@@ -1162,15 +1158,19 @@
     }
 
     .content-container-left {
+        align-items: center;
         display: flex;
         flex-direction: row;
         gap: 360px;
+        margin-bottom: 200px;
     }
 
     .content-container-right {
+        align-items: center;
         display: flex;
         flex-direction: row-reverse;
         gap: 360px;
+        margin-bottom: 200px;
     }
 
     .timeline-content-title {
@@ -1207,7 +1207,7 @@
         width: 410px; 
         height: 270px;
         background-color: #E0F2F1;
-        margin-bottom: 200px;
+        margin-bottom: 0;
         border: 1px solid transparent;
         border-radius: 22px;
     }
@@ -1226,11 +1226,11 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        right: -17px;
+        right: auto;
         background-color: #00796B;
         border: 9px solid #E0F2F1;
         border-radius: 50%;
-        left: 48.55%;
+        left: calc(50% - 20px);
         bottom: 0px;
         z-index: 1;
         animation: pulse 3s infinite;
@@ -1244,7 +1244,7 @@
         right: -17px;
         background-color: #00796B;
         border: 10px solid #E0F2F1;
-        top: 95px;
+        top: calc((272px / 2) - 23px);
         border-radius: 50%;
         z-index: 1;
         animation: pulse 3s infinite;
@@ -1316,23 +1316,22 @@
 
     .timeline-img {
         width: 250px;
-        height: 225px;
+        height: auto;
     }
 
     .fast-logo {
         width: 225px;
-        height: 175px;
+        height: auto;
     }
 
     .simDiv-logo {
         width: 280px;
-        height: 170px;
-        padding-top: 30px;
+        height: auto;
     }
 
     .timeline .office-space {
         width: 300px;
-        height: 250px;
+        height: auto;
     }
 
     .timeline-container {
@@ -1403,7 +1402,8 @@
     }
 
     .join-image img {
-        height: 450px;
+        /* height: 450px; */
+        height: auto;
         width: 550px;
         border-radius: 20px;
     }
@@ -1566,8 +1566,8 @@
 
     .overlay {
         position: absolute;
-        height: 88%;
-        width: 93.8%;
+        height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -1596,7 +1596,7 @@
     }
 
     .our-team-card h3 {
-        padding: 20px 0px 10px 20px;
+        padding: 20px 0px 10px 0;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
@@ -1744,7 +1744,7 @@
 
     .benefits-title h2 {
         font-size: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 24px;
         color: #023B31;
         font-family: 'Termina', Helvetica, Arial;
     }
@@ -1892,14 +1892,14 @@
     }
 
     .community-title {
-        width: 550px;
+        width: 50%;
         text-align: left;
     }
 
     .community-title h2 {
         font-size: 38px;
         color: #023B31;
-        padding-bottom: 30px;
+        padding-bottom: 24px;
         font-family: 'Termina', Helvetica, Arial;
     }
 
@@ -1919,6 +1919,10 @@
         font-size: 18px;
         font-weight: 500;
         font-family: 'Montserrat', Helvetica, Arial;
+    }
+
+    .community-image {
+        width: 50%;
     }
 
     .community-image img {
@@ -2086,7 +2090,6 @@
     /* Jobs Page */
 
     .jobs-container {
-        height: 95vh;
         background-color: rgb(231, 240, 216, 0.8);
     }
 
@@ -2128,12 +2131,12 @@
     }
 
     .jobs-links-container {
-        padding-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 50px;
+        padding-top: 50px;
     }
 
     .jobs-links {

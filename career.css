@@ -325,9 +325,12 @@
 }
 
 .community-list li {
+    align-items: start;
+    display: flex;
     font-size: 18px;
     font-weight: 500;
     font-family: 'Montserrat', Helvetica, Arial;
+    text-align: left;
 }
 
 .community-image img {

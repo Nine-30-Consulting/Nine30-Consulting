@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>NINE 30 CONSULTING</title>
         <link rel="icon" href="https://www.nine30consulting.com/uploads/1/1/8/0/118003059/nine-thirty-consulting-logo-final-03_orig.png" type="image/x-icon">
@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="responsive.css">
         <link rel="stylesheet" href="responsive2.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
 
     
@@ -112,11 +114,10 @@
                 </div>
                 <div class="green-line"></div>
 
-                <div class="cards-container slide-card-container">
-
-                    <div class="capabilities-card myCardSlides card-fade">
+                <div id="slick" class="capabilities-slider">
+                    <div class="capabilities-card">
                         <div class="capabilities-icon">
-                            <img src="https://static.vecteezy.com/system/resources/previews/024/149/615/non_2x/dollar-coin-with-cogwheel-showing-concept-of-money-management-vector.jpg" alt="card-picture">
+                            <img src="Financial_Management.png" alt="card-picture">
                         </div>
                         <div class="card-text">
                             <h3>FINANCIAL MANAGEMENT</h3>
@@ -125,39 +126,39 @@
                                 expenditures, and carryover for organizational financial health assessments, 
                                 and supporting command initiatives for Comptroller and Business 
                                 Financial Manager (BFM) community.</p>
-                            <a href="financialManagement.html">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            <a href="financialManagement.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
                         </div>
                     </div>
 
-                    <div class="capabilities-card myCardSlides card-fade">
+                    <div class="capabilities-card">
                         <div class="capabilities-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/512/7946/7946752.png" alt="card-picture">
+                            <img src="Project_Management.png" alt="card-picture">
                         </div>
                         <div class="card-text">
                             <h3>PROJECT MANAGEMENT</h3>
                             <p>Experienced Project Management Professionals (PMPs) providing full life cycle 
                                 project management in the areas of initiating, planning, executing, 
                                 monitoring & controlling, and closing for projects ranging from $10K to $75M.</p>
-                            <a href="projectManagement.html">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            <a href="projectManagement.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
                         </div>
                     </div>
 
-                    <div class="capabilities-card myCardSlides card-fade">
+                    <div class="capabilities-card">
                         <div class="capabilities-icon">
-                            <img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Analytics-512.png" alt="card-picture">
+                            <img src="Data_Analytics.png" alt="card-picture">
                         </div>
                         <div class="card-text">
                             <h3>DATA ANALYTICS</h3>
                             <p>Aggregating, evaluating, and cleansing complex financial, acquisition, 
                                 and technical data and developing real-time, automated data 
                                 visualizations through various tools to enable data-driven decision making.</p>
-                            <a href="dataAnalytics.html">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            <a href="dataAnalytics.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
                         </div>
                     </div>
 
-                    <div class="capabilities-card myCardSlides card-fade">
+                    <div class="capabilities-card">
                         <div class="capabilities-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5732/5732593.png" alt="card-picture">
+                            <img src="Acquisition.png" alt="card-picture">
                         </div>
                         <div class="card-text">
                             <h3>ACQUISITION</h3>
@@ -165,23 +166,83 @@
                                 service and hardware requirements, working directly with CORs to plan 
                                 and monitor contract ceiling, funded levels, and burn rates, and 
                                 developing hardware procurement package and tracking material.</p>
-                            <a href="caseStudies.html">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            <a href="caseStudies.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
                         </div>
                     </div>
-                    
                 </div>
 
-                <div class="card-buttons">
-                    <a class="card-prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="card-next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-
-                <div style="text-align: center;">
-                    <span class="card-dot" onclick="currentSlides(1)"></span>
-                    <span class="card-dot" onclick="currentSlides(2)"></span>
-                    <span class="card-dot" onclick="currentSlides(3)"></span>
-                    <span class="card-dot" onclick="currentSlides(4)"></span>
-                </div>
+                <!-- <div class="slider-container">
+                    <div id="slick" class="cards-container slide-card-container">
+    
+                        <div class="capabilities-card myCardSlides card-fade">
+                            <div class="capabilities-icon">
+                                <img src="Financial_Management.png" alt="card-picture">
+                            </div>
+                            <div class="card-text">
+                                <h3>FINANCIAL MANAGEMENT</h3>
+                                <p>Deep subject matter expertise in financial management developing cost estimates, 
+                                    burn rate analysis, and financial reporting for projects, tracking new orders, 
+                                    expenditures, and carryover for organizational financial health assessments, 
+                                    and supporting command initiatives for Comptroller and Business 
+                                    Financial Manager (BFM) community.</p>
+                                <a href="financialManagement.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            </div>
+                        </div>
+    
+                        <div class="capabilities-card myCardSlides card-fade">
+                            <div class="capabilities-icon">
+                                <img src="Project_Management.png" alt="card-picture">
+                            </div>
+                            <div class="card-text">
+                                <h3>PROJECT MANAGEMENT</h3>
+                                <p>Experienced Project Management Professionals (PMPs) providing full life cycle 
+                                    project management in the areas of initiating, planning, executing, 
+                                    monitoring & controlling, and closing for projects ranging from $10K to $75M.</p>
+                                <a href="projectManagement.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            </div>
+                        </div>
+    
+                        <div class="capabilities-card myCardSlides card-fade">
+                            <div class="capabilities-icon">
+                                <img src="Data_Analytics.png" alt="card-picture">
+                            </div>
+                            <div class="card-text">
+                                <h3>DATA ANALYTICS</h3>
+                                <p>Aggregating, evaluating, and cleansing complex financial, acquisition, 
+                                    and technical data and developing real-time, automated data 
+                                    visualizations through various tools to enable data-driven decision making.</p>
+                                <a href="dataAnalytics.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            </div>
+                        </div>
+    
+                        <div class="capabilities-card myCardSlides card-fade">
+                            <div class="capabilities-icon">
+                                <img src="Acquisition.png" alt="card-picture">
+                            </div>
+                            <div class="card-text">
+                                <h3>ACQUISITION</h3>
+                                <p>Extensive experience developing and executing acquisition strategies for 
+                                    service and hardware requirements, working directly with CORs to plan 
+                                    and monitor contract ceiling, funded levels, and burn rates, and 
+                                    developing hardware procurement package and tracking material.</p>
+                                <a href="caseStudies.html" class="cta-learnmore">Learn More <img src="cta_arrow@2x.png" alt="Learn More"></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="card-buttons">
+                        <a class="card-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="card-next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+    
+                    <div style="text-align: center;">
+                        <span class="card-dot" onclick="currentSlides(1)"></span>
+                        <span class="card-dot" onclick="currentSlides(2)"></span>
+                        <span class="card-dot" onclick="currentSlides(3)"></span>
+                        <span class="card-dot" onclick="currentSlides(4)"></span>
+                    </div>
+                </div> -->
             </div>
         </section>
 
@@ -341,10 +402,10 @@
 
 
         <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery-latest.min.js">
-
-
-        </script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
 
         <script>
 
@@ -383,7 +444,7 @@
 
             // Capabilities Slideshow //
 
-            if (jQuery(window).width() < 699) {
+            /*if (jQuery(window).width() < 699) {
                 let slideIndex = 1;
                     showSlides(slideIndex);
 
@@ -410,7 +471,7 @@
                     slides[slideIndex-1].style.display = "block";
                     dots[slideIndex-1].className += " active";
                 }
-            }
+            }*/
 
         </script>
     </body>

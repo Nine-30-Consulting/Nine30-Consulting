@@ -253,7 +253,7 @@
     
     .hero-picture {
         width: 244px;
-        height: 204px;
+        height: auto;
         border-radius: 12px;
     }
 
@@ -304,7 +304,7 @@
     
     .hero-picture-case-studies {
         width: 244px;
-        height: 204px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -372,7 +372,7 @@
 
     .hero-picture-ourteam {
         width: 244px;
-        height: 204px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -381,7 +381,7 @@
     /* Capabilities Section */
 
     .capabilities-container {
-        height: 1015px;
+        height: auto;
         background-color: #F0F9EA;
         position: relative;
     }
@@ -418,7 +418,6 @@
     /* Card Slideshow */
 
     .slide-card-container {
-        width: 250px;
         margin: auto;
     }
 
@@ -463,7 +462,6 @@
     .card-text {
         padding: 8px 12px;
         width: 210px;
-        text-align: center;
     }
 
     .card-dot {
@@ -502,10 +500,6 @@
         position: normal;
     }
 
-    .capabilities-icon {
-        text-align: center;
-    }
-
     .capabilities-card img {
         width: 64px;
         height: 64px;
@@ -541,7 +535,7 @@
         font-weight: bold;
     }
 
-    .card-text img {
+    .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
         padding-left: 5px;
@@ -612,7 +606,7 @@
     }
     
     .supporting-card img {
-        width: 108px;
+        width: auto;
         height: 90px;
     }
     
@@ -1171,10 +1165,9 @@
         width: 250px;
     }
 
-    .case-studies-card img {
+    .case-studies-card .case-studies-img {
         height: 180px;
         width: 244px;
-        padding-bottom: 30px;
     }
 
     .case-studies-card .aquisition-button {
@@ -1302,6 +1295,11 @@
         display: flex;
         flex-direction: row;
         gap: 0px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .content-container-left .timeline-item {
         margin-left: 30px;
     }
 
@@ -1310,6 +1308,7 @@
         flex-direction: row-reverse;
         gap: 0px;
         margin-right: 0px;
+        margin-bottom: 50px;
     }
 
     .timeline-content-title {
@@ -1346,7 +1345,7 @@
         width: 220px; 
         height: auto;
         background-color: #E0F2F1;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         border: 1px solid transparent;
         border-radius: 22px;
     }
@@ -1362,46 +1361,21 @@
 
     .timeline-header span {
         content: '';
-        position: absolute;
         width: 12px;
         height: 12px;
-        right: -17px;
         background-color: #00796B;
         border: 5px solid #E0F2F1;
-        border-radius: 50%;
-        left: 12.2%;
-        top: 95px;
-        bottom: 0px;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        right: -17px;
-        background-color: #00796B;
-        border: 5px solid #E0F2F1;
-        top: 6px;
         border-radius: 50%;
         z-index: 1;
         animation: pulse 3s infinite;
     }
 
-    .timeline-item-last::after {
-        content: '';
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        right: -17px;
-        background-color: #00796B;
-        border: 5px solid #E0F2F1;
-        top: 2px;
-        border-radius: 50%;
-        z-index: 1;
-        animation: pulse 3s infinite;
+    .timeline span {
+        left: -15px;
+    }
+
+    .last-timeline-item span {
+        left: -15px;
     }
 
     @keyframes pulse {
@@ -1455,13 +1429,13 @@
 
     .timeline-img {
         width: 250px;
-        height: 225px;
+        height: auto;
         display: none;
     }
 
     .timeline .office-space {
         width: 300px;
-        height: 250px;
+        height: auto;
         display: none;
     }
 
@@ -1484,8 +1458,14 @@
     }
 
     .timeline-header {
+        align-items: end;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
         text-align: center;
-        padding: 10px 20px 0px 20px;
+        margin: 0 auto;
+        max-width: 258px;
+        padding: 10px 0 0;
         position: relative;
     }
 
@@ -1494,7 +1474,7 @@
         font-size: 14px;
         font-weight: bold;
         width: 100px;
-        margin: 10px 0 10px 29.5%;
+        margin: 10px 0 10px;
         padding: 10px 12px;
         font-family: 'Montserrat', Helvetica, Arial;
         border: 1px solid transparent;
@@ -1505,10 +1485,21 @@
     .timeline-header-subtitle {
         color: #023B31;
         font-size: 20px;
-        margin: 0px 0 -10px 25px;
-        text-align: center;
+        margin: 0px 0 -10px;
+        text-align: left;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
+    }
+
+    .timeline-header-title_container {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        text-align: center;
+    }
+
+    .timeline-header span {
+        order: 0;
     }
 
     .timeline-ending h2 {
@@ -1541,8 +1532,9 @@
     }
 
     .join-image img {
-        height: 225px;
+        /* height: 225px; */
         width: 244px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -1748,7 +1740,7 @@
 
     .overlay {
         position: absolute;
-        height: 85.1%;
+        height: 100%;
         width: 75%;
         top: 0;
         left: 0;
@@ -1780,7 +1772,7 @@
     }
 
     .our-team-card h3 {
-        padding: 20px 0px 10px 20px;
+        padding: 20px 0px 10px 0;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
@@ -2072,7 +2064,7 @@
 
     .diversity-image img {
         width: 244px;
-        height: 204px;
+        height: auto;
         border-radius: 20px;
         box-shadow: 2px 2px 12px rgb(184, 190, 174);
     }
@@ -2123,7 +2115,7 @@
         font-size: 16px;
         font-weight: 500;
         padding-bottom: 15px;
-        line-height: 1.3;
+        line-height: 1;
         width: 244px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
@@ -2312,7 +2304,6 @@
     /* Jobs Page */
 
     .jobs-container {
-        height: 550px;
         background-color: rgb(231, 240, 216, 0.8);
     }
 
@@ -2804,7 +2795,7 @@
     
     .hero-picture-case-studies {
         width: 334px;
-        height: 234px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -2865,7 +2856,7 @@
 
     .hero-picture-ourteam {
         width: 334px;
-        height: 234px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -2876,7 +2867,7 @@
     /* Capabilities Section */
 
     .capabilities-container {
-        height: 950px;
+        height: auto;
         background-color: #F0F9EA;
         position: relative;
     }
@@ -2917,7 +2908,6 @@
     /* Card Slideshow */
 
     .slide-card-container {
-        width: 290px;
         margin: auto;
     }
 
@@ -2961,7 +2951,6 @@
     .card-text {
         padding: 8px 12px;
         width: 260px;
-        text-align: center;
     }
 
     .card-dot {
@@ -3000,10 +2989,6 @@
         position: normal;
     }
 
-    .capabilities-icon {
-        text-align: center;
-    }
-
     .capabilities-card img {
         width: 60px;
         height: 60px;
@@ -3015,7 +3000,6 @@
         font-family: 'Montserrat', Helvetica, Arial;
         margin-top: 15px;
         font-weight: bold;
-        text-align: center;
     }
 
     .capabilities-card p {
@@ -3025,7 +3009,6 @@
         margin-top: 10px;
         line-height: 1.3;
         margin-bottom: 20px;
-        text-align: center;
     }
 
     .capabilities-card a {
@@ -3041,7 +3024,7 @@
         font-weight: bold;
     }
 
-    .card-text img {
+    .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
         padding-left: 5px;
@@ -3111,8 +3094,8 @@
     }
     
     .supporting-card img {
-        width: 108px;
-        height: 90px;
+        width: auto;
+        height: 100px;
     }
     
     .supporting-card h3 {
@@ -3668,10 +3651,9 @@
         width: 350px;
     }
 
-    .case-studies-card img {
+    .case-studies-card .case-studies-img {
         height: 262px;
         width: 350px;
-        padding-bottom: 30px;
     }
 
     .case-studies-card .aquisition-button {
@@ -3787,8 +3769,12 @@
         padding-top: 100px;
     }
 
-    .timeline::after {
-        left: 31px;
+    .timeline span {
+        left: 0;
+    }
+
+    .last-timeline-item span {
+        left: 0;
     }
 
     .timeline-content {
@@ -3799,6 +3785,11 @@
         display: flex;
         flex-direction: row;
         gap: 0px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .content-container-left .timeline-item {
         margin-left: 60px;
     }
 
@@ -3806,6 +3797,11 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 0px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .content-container-right .timeline-item {
         margin-right: 20px;
     }
 
@@ -3843,7 +3839,7 @@
         width: 280px; 
         height: auto;
         background-color: #E0F2F1;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         border: 1px solid transparent;
         border-radius: 22px;
     }
@@ -3859,43 +3855,11 @@
 
     .timeline-header span {
         content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        right: -17px;
-        background-color: #00796B;
-        border: 9px solid #E0F2F1;
-        border-radius: 50%;
-        left: 4%;
-        top: 105px;
-        bottom: 0px;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item::after {
-        content: '';
-        position: absolute;
+        display: block;
         width: 23px;
         height: 23px;
-        right: -17px;
         background-color: #00796B;
         border: 10px solid #E0F2F1;
-        top: 2px;
-        border-radius: 50%;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item-last::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 2px;
         border-radius: 50%;
         z-index: 1;
         animation: pulse 3s infinite;
@@ -3952,13 +3916,13 @@
 
     .timeline-img {
         width: 250px;
-        height: 225px;
+        height: auto;
         display: none;
     }
 
     .timeline .office-space {
         width: 300px;
-        height: 250px;
+        height: auto;
         display: none;
     }
 
@@ -3981,8 +3945,14 @@
     }
 
     .timeline-header {
+        align-items: end;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
         text-align: center;
-        padding: 10px 20px 0px 20px;
+        max-width: 360px;
+        padding: 10px 0 0;
+        margin: 0 auto;
         position: relative;
     }
 
@@ -3991,7 +3961,7 @@
         font-size: 16px;
         font-weight: bold;
         width: 120px;
-        margin: 10px 0 10px 32.9%;
+        margin: 10px 0 10px 0;
         padding: 12px 15px;
         font-family: 'Montserrat', Helvetica, Arial;
         border: 1px solid transparent;
@@ -4001,14 +3971,23 @@
     .timeline-header-subtitle {
         color: #023B31;
         font-size: 27px;
-        margin: 0px 0 0 30px;
+        margin: 0;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
+        text-align: left;
+    }
+
+    .timeline-header-title_container {
+        order: 1;
+    }
+
+    .timeline-header span {
+        order: 0;
     }
 
     .timeline-ending h2 {
         font-size: 25px;
-        width: 380px;
+        /* width: 380px; */
         font-family: 'Termina', Helvetica, Arial;
         color: #023B31;
         text-align: center;
@@ -4032,8 +4011,9 @@
     }
 
     .join-image img {
-        height: 300px;
+        /* height: 300px; */
         width: 350px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -4200,8 +4180,8 @@
 
     .overlay {
         position: absolute;
-        height: 87.1%;
-        width: 90.5%;
+        height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -4230,7 +4210,7 @@
     }
 
     .our-team-card h3 {
-        padding: 20px 0px 10px 20px;
+        padding: 20px 0px 10px 0;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
@@ -4526,7 +4506,7 @@
 
     .diversity-image img {
         width: 334px;
-        height: 234px;
+        height: auto;
         border-radius: 20px;
         box-shadow: 2px 2px 12px rgb(184, 190, 174);
     }
@@ -4579,7 +4559,7 @@
         font-size: 17px;
         font-weight: 500;
         padding-bottom: 15px;
-        line-height: 1.5;
+        line-height: 1;
         font-family: 'Montserrat', Helvetica, Arial;
     }
 
@@ -4759,7 +4739,6 @@
     /* Jobs Page */
 
     .jobs-container {
-        height: 750px;
         background-color: rgb(231, 240, 216, 0.8);
     }
 
@@ -5175,8 +5154,9 @@
     /* Capabilities Section */
 
     .capabilities-container {
-        height: 1140px;
+        height: auto;
         background-color: rgb(231, 240, 216, 0.8);
+        overflow: hidden;
     }
     
     .capabilities-title {
@@ -5206,13 +5186,26 @@
         text-align: center;
         line-height: 1.25;
     }
-    
+
+    .slider-container {
+        position: relative;
+    }
+
+    .cards-container.slick-slider {
+        display: flex;
+    }
+
+    .cards-container .slick-next, .cards-container .slick-prev {
+        position: static;
+    }
+
     .cards-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 25px;
+        padding-bottom: 30px;
         padding-top: 20px;
     }
 
@@ -5222,7 +5215,7 @@
         gap: 404px;
         margin-top: 0px;
         position: absolute;
-        top: 1525px;
+        top: 50%;
         bottom: 0;
         right: 0;
         left: 0;
@@ -5230,10 +5223,11 @@
     }
 
     .card-prev, .card-next {
+        cursor: pointer;
         font-size: 30px;
     }
 
-    .card-text img {
+    .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
         padding-left: 5px;
@@ -5300,14 +5294,14 @@
     }
     
     .supporting-card img {
-        width: 122px;
+        width: auto;
         height: 100px;
         padding-top: 20px;
         padding-bottom: 0px;
     }
     
     .supporting-card h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -5375,7 +5369,8 @@
         flex-direction: column;
         align-items: center;
         background: transparent linear-gradient(0deg, #173142 0%, #398276 100%) 0% 0% no-repeat padding-box;
-        height: 800px;
+        height: auto;
+        padding-bottom: 62px;
     }
 
     .join-us-image img {
@@ -5528,6 +5523,10 @@
         background-color: #81C94C;
         padding: 25px 0px;
         align-items: center;
+    }
+
+    .copyright {
+        max-width: 50%;
     }
 
     .copyright h3 {
@@ -5775,7 +5774,7 @@
     
     .hero-picture-case-studies {
         width: 420px;
-        height: 315px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -5827,10 +5826,9 @@
         position: relative;
     }
     
-    .case-studies-card img {
+    .case-studies-card .case-studies-img {
         height: 230px;
         width: 330px;
-        padding-bottom: 30px;
     }
     
     .case-studies-card .aquisition-button {
@@ -5977,6 +5975,11 @@
         display: flex;
         flex-direction: row;
         gap: 0px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .content-container-left .timeline-item {
         margin-left: 60px;
     }
 
@@ -5984,7 +5987,16 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 0px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .content-container-right .timeline-item {
         margin-right: 20px;
+    }
+
+    .timeline span {
+        left: 0;
     }
 
     .timeline-content-title {
@@ -6021,7 +6033,7 @@
         width: 280px; 
         height: auto;
         background-color: #E0F2F1;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         border: 1px solid transparent;
         border-radius: 22px;
     }
@@ -6037,43 +6049,11 @@
 
     .timeline-header span {
         content: '';
-        position: absolute;
+        display: block;
         width: 22px;
         height: 22px;
-        right: -17px;
         background-color: #00796B;
         border: 9px solid #E0F2F1;
-        border-radius: 50%;
-        left: 24%;
-        top: 105px;
-        bottom: 0px;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 2px;
-        border-radius: 50%;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item-last::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 2px;
         border-radius: 50%;
         z-index: 1;
         animation: pulse 3s infinite;
@@ -6130,13 +6110,13 @@
 
     .timeline-img {
         width: 250px;
-        height: 225px;
+        height: auto;
         display: none;
     }
 
     .timeline .office-space {
         width: 300px;
-        height: 250px;
+        height: auto;
         display: none;
     }
 
@@ -6159,8 +6139,14 @@
     }
 
     .timeline-header {
+        align-items: end;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
         text-align: center;
-        padding: 10px 20px 0px 20px;
+        margin: 0 auto;
+        max-width: 360px;
+        padding: 10px 0 0;
         position: relative;
     }
 
@@ -6169,7 +6155,7 @@
         font-size: 16px;
         font-weight: bold;
         width: 120px;
-        margin: 10px 0 10px 37.5%;
+        margin: 10px 0 10px;
         padding: 12px 15px;
         font-family: 'Montserrat', Helvetica, Arial;
         border: 1px solid transparent;
@@ -6179,9 +6165,14 @@
     .timeline-header-subtitle {
         color: #023B31;
         font-size: 27px;
-        margin: 0px 0 0 30px;
+        margin: 0px;
+        text-align: left;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
+    }
+
+    .timeline-header-title_container {
+        order: 1;
     }
 
     .timeline-ending h2 {
@@ -6373,8 +6364,8 @@
     
     .overlay {
         position: absolute;
-        height: 88%;
-        width: 72.5%;
+        height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -6406,7 +6397,7 @@
     }
     
     .our-team-card h3 {
-        padding: 20px 0px 10px 20px;
+        padding: 20px 0px 10px 0;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
@@ -6448,7 +6439,7 @@
     
     .hero-title-image-career img {
         width: 420px;
-        height: 315px;
+        height: auto;
     }
 
 
@@ -6689,7 +6680,7 @@
     }
 
     .diversity-image img {
-        height: 365px;
+        height: auto;
         width: 450px;
         border-radius: 20px;
         box-shadow: 2px 2px 12px rgb(184, 190, 174);
@@ -6923,7 +6914,6 @@
     /* Jobs Page */
     
     .jobs-container {
-        height: 760px;
         background-color: rgb(231, 240, 216, 0.8);
     }
     
@@ -7289,7 +7279,7 @@
     
     .hero-picture {
         width: 500px;
-        height: 350px;
+        height: auto;
         border-radius: 12px;
     }
 
@@ -7328,8 +7318,12 @@
         text-align: center;
         line-height: 1.25;
     }
+
+    .capabilities-card {
+        display: block;
+    }
     
-    .cards-container {
+    .slider-container .cards-container {
         display: grid;
         grid-template-columns: repeat(2, 340px);
         justify-content: center;
@@ -7339,7 +7333,11 @@
         padding-top: 20px;
     }
 
-    .card-text img {
+    .cards-container .slick-next, .cards-container .slick-prev {
+        display: none;
+    }
+
+    .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
         padding-left: 5px;
@@ -7405,7 +7403,7 @@
     }
     
     .supporting-card img {
-        width: 122px;
+        width: auto;
         height: 100px;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -7479,7 +7477,7 @@
         flex-direction: column;
         align-items: center;
         background: transparent linear-gradient(0deg, #173142 0%, #398276 100%) 0% 0% no-repeat padding-box;
-        height: 910px;
+        height: auto;
     }
 
     .join-us-image img {
@@ -7491,6 +7489,7 @@
     .join-us-title {
         margin-left: 0px;
         margin-top: 30px;
+        margin-bottom: 60px;
         text-align: center;
         width: 450px;
     }
@@ -7840,7 +7839,7 @@
     
     .hero-picture-case-studies {
         width: 460px;
-        height: 430px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -7890,10 +7889,9 @@
         position: relative;
     }
     
-    .case-studies-card img {
+    .case-studies-card .case-studies-img {
         height: 210px;
         width: 300px;
-        padding-bottom: 30px;
     }
     
     .case-studies-card .aquisition-button {
@@ -8023,15 +8021,19 @@
     }
 
     .content-container-left {
+        align-items: center;
         display: flex;
         flex-direction: row;
         gap: 100px;
+        margin-bottom: 200px;
     }
 
     .content-container-right {
+        align-items: center;
         display: flex;
         flex-direction: row-reverse;
         gap: 100px;
+        margin-bottom: 200px;
     }
 
     .timeline-content-title {
@@ -8068,7 +8070,8 @@
         width: 300px; 
         height: 380px;
         background-color: #E0F2F1;
-        margin-bottom: 200px;
+        /* margin-bottom: 200px; */
+        margin-bottom: 0;
         border: 1px solid transparent;
         border-radius: 22px;
     }
@@ -8087,40 +8090,12 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        right: -17px;
+        right: auto;
         background-color: #00796B;
         border: 9px solid #E0F2F1;
         border-radius: 50%;
-        left: 47.3%;
+        left: calc(50% - 20px);
         bottom: 0px;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 95px;
-        border-radius: 50%;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item-last::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 95px;
-        border-radius: 50%;
         z-index: 1;
         animation: pulse 3s infinite;
     }
@@ -8176,24 +8151,22 @@
 
     .timeline-img {
         width: 200px;
-        height: 180px;
+        height: auto;
     }
 
     .fast-logo {
         width: 250px;
-        height: 160px;
-        padding-top: 50px;
+        height: auto;
     }
 
     .simDiv-logo {
         width: 250px;
-        height: 140px;
-        padding-top: 40px;
+        height: auto;
     }
 
     .timeline .office-space {
         width: 265px;
-        height: 210px;
+        height: auto;
     }
 
     .timeline-container {
@@ -8408,7 +8381,7 @@
 
     .our-team-container {
         display: grid;
-        grid-template-columns: repeat(2, 280px);
+        grid-template-columns: repeat(2, 300px);
         align-items: center;
         justify-content: center;
         gap: 20px 40px;
@@ -8430,7 +8403,7 @@
     
     .overlay {
         position: absolute;
-        height: 88%;
+        height: 100%;
         width: 100%;
         top: 0;
         left: 0;
@@ -8463,7 +8436,7 @@
     }
     
     .our-team-card h3 {
-        padding: 20px 0px 10px 20px;
+        padding: 20px 0px 10px 0;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
@@ -8500,7 +8473,7 @@
     
     .hero-title-image-career img {
         width: 500px;
-        height: 350px;    
+        height: auto;    
     }
 
 
@@ -8740,7 +8713,7 @@
     }
 
     .diversity-image img {
-        height: 400px;
+        height: auto;
         width: 500px;
         border-radius: 20px;
         box-shadow: 2px 2px 12px rgb(184, 190, 174);
@@ -8828,7 +8801,7 @@
     }
 
     .apply-image img {
-        height: 80%;
+        height: auto;
         width: 80%;
         border-radius: 20px;
         margin-top: 60px;
@@ -9001,7 +8974,6 @@
     /* Jobs Page */
     
     .jobs-container {
-        height: 90vh;
         background-color: rgb(231, 240, 216, 0.8);
     }
     
@@ -9411,7 +9383,7 @@
     
     .hero-picture {
         width: 450px;
-        height: 300px;
+        height: auto;
         border-radius: 12px;
     }
     
@@ -9450,7 +9422,7 @@
     
     .hero-picture-case-studies {
         width: 430px;
-        height: 400px;
+        height: auto;
         border-radius: 20px;
     }
     
@@ -9498,7 +9470,7 @@
 
     .hero-picture-ourteam {
         width: 480px;
-        height: 365px;
+        height: auto;
         border-radius: 12px;
     }
 
@@ -9577,10 +9549,6 @@
         left: 0px;
     }
 
-    .capabilities-icon {
-        text-align: center;
-    }
-
     .capabilities-card img {
         width: 65px;
         height: 65px;
@@ -9616,7 +9584,7 @@
         font-weight: bold;
     }
 
-    .card-text img {
+    .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
         padding-left: 5px;
@@ -9682,7 +9650,7 @@
     }
     
     .supporting-card img {
-        width: 122px;
+        width: auto;
         height: 100px;
     }
     
@@ -9765,7 +9733,7 @@
     }
     
     .join-us-image img {
-        width: 100%;
+        width: auto;
         height: 400px;
         margin-top: 4px;
     }
@@ -10182,10 +10150,9 @@
         position: relative;
     }
 
-    .case-studies-card img {
+    .case-studies-card .case-studies-img {
         height: 262px;
         width: 400px;
-        padding-bottom: 30px;
     }
 
     .case-studies-card .aquisition-button {
@@ -10309,15 +10276,21 @@
     }
 
     .content-container-left {
+        align-items: center;
         display: flex;
         flex-direction: row;
         gap: 260px;
+        position: relative;
+        margin-bottom: 200px;
     }
 
     .content-container-right {
+        align-items: center;
         display: flex;
         flex-direction: row-reverse;
         gap: 260px;
+        position: relative;
+        margin-bottom: 200px;
     }
 
     .timeline-content-title {
@@ -10354,7 +10327,7 @@
         width: 400px; 
         height: 265px;
         background-color: #E0F2F1;
-        margin-bottom: 200px;
+        margin-bottom: 0;
         border: 1px solid transparent;
         border-radius: 22px;
     }
@@ -10373,40 +10346,12 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        right: -17px;
+        right: auto;
         background-color: #00796B;
         border: 9px solid #E0F2F1;
         border-radius: 50%;
-        left: 48.05%;
+        left: calc(50% - 20px);
         bottom: 0px;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 95px;
-        border-radius: 50%;
-        z-index: 1;
-        animation: pulse 3s infinite;
-    }
-
-    .timeline-item-last::after {
-        content: '';
-        position: absolute;
-        width: 23px;
-        height: 23px;
-        right: -17px;
-        background-color: #00796B;
-        border: 10px solid #E0F2F1;
-        top: 95px;
-        border-radius: 50%;
         z-index: 1;
         animation: pulse 3s infinite;
     }
@@ -10428,11 +10373,15 @@
     }
 
     .left::after {
-        right: -95.5px;
+        /* right: -95.5px; */
+        right: calc(-50% + 23px);
+        left: unset;
     }
 
     .right::after {
-        left: -95.7px;
+        /* left: -95.7px; */
+        left: calc(-50% + 23px);
+        right: unset;
     }
 
     .timeline::after {
@@ -10462,18 +10411,17 @@
 
     .timeline-img {
         width: 200px;
-        height: 185px;
+        height: auto;
     }
 
     .timeline .office-space {
         width: 280px;
-        height: 220px;
+        height: auto;
     }
 
     .simDiv-logo {
         width: 220px;
-        height: 150px;
-        padding-top: 40px;
+        height: auto;
     }
 
     .timeline-container {
@@ -10544,8 +10492,9 @@
     }
 
     .join-image img {
-        height: 350px;
+        /* height: 350px; */
         width: 500px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -10683,10 +10632,10 @@
 
     .our-team-container {
         display: grid;
-        grid-template-columns: repeat(3, 250px);
+        grid-template-columns: repeat(3, 300px);
         align-items: center;
         justify-content: center;
-        gap: 50px 110px;
+        gap: 50px 80px;
         padding: 100px 50px;
         background-color: rgb(231, 240, 216, 0.8);
     }
@@ -10705,7 +10654,7 @@
     
     .overlay {
         position: absolute;
-        height: 87.8%;
+        height: 100%;
         width: 100%;
         top: 0;
         left: 0;
@@ -10735,7 +10684,7 @@
     }
 
     .our-team-card h3 {
-        padding: 20px 0px 10px 20px;
+        padding: 20px 0px 10px 0;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Montserrat', Helvetica, Arial;
@@ -11014,7 +10963,7 @@
     }
 
     .diversity-image img {
-        height: 350px;
+        height: auto;
         width: 450px;
         border-radius: 20px;
         box-shadow: 2px 2px 12px rgb(184, 190, 174);
@@ -11236,7 +11185,6 @@
     /* Jobs Page */
     
     .jobs-container {
-        height: 100vh;
         background-color: rgb(231, 240, 216, 0.8);
     }
     

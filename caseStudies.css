@@ -220,10 +220,12 @@ header ul li ul li:hover a {
     position: relative;
 }
 
-.case-studies-card img {
+.case-studies-card .case-studies-img {
+    border: 1px solid #dddee1;
+    border-radius: 4px;
     height: 262px;
     width: 447px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .case-studies-card .aquisition-button {

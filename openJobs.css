@@ -126,8 +126,8 @@
 /* Jobs Page */
 
 .jobs-container {
-    height: 800px;
     background-color: rgb(231, 240, 216, 0.8);
+    padding-bottom: 130px;
 }
 
 .jobs-title {
@@ -169,11 +169,6 @@
 
 .jobs-links-container {
     padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
 }
 
 .jobs-links {

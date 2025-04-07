@@ -27,12 +27,14 @@
     display: flex;
     flex-direction: row;
     gap: 360px;
+    position: relative;
 }
 
 .content-container-right {
     display: flex;
     flex-direction: row-reverse;
     gap: 360px;
+    position: relative;
 }
 
 .timeline-content-title {
@@ -85,42 +87,24 @@
 
 .timeline-header span {
     content: '';
-    position: absolute;
     width: 20px;
     height: 20px;
-    right: -17px;
     background-color: #00796B;
     border: 9px solid #E0F2F1;
     border-radius: 50%;
-    left: 48.9%;
-    bottom: 0px;
     z-index: 1;
     animation: pulse 3s infinite;
 }
 
-.timeline-item::after {
-    content: '';
+.timeline span {
+    display: block;
     position: absolute;
     width: 23px;
     height: 23px;
-    right: -17px;
+    left: calc(50% - 23px);
     background-color: #00796B;
     border: 10px solid #E0F2F1;
-    top: 95px;
-    border-radius: 50%;
-    z-index: 1;
-    animation: pulse 3s infinite;
-}
-
-.timeline-item-last::after {
-    content: '';
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    right: -17px;
-    background-color: #00796B;
-    border: 10px solid #E0F2F1;
-    top: 95px;
+    top: calc(50% - 23px);
     border-radius: 50%;
     z-index: 1;
     animation: pulse 3s infinite;
@@ -128,17 +112,17 @@
 
 @keyframes pulse {
     0% {
-        transform: scale(0.9);
+        transform: scale(0.9) translateY(-50%);
         box-shadow: 0 0 0 0 #e0f2f1c6;
     }
 
     70% {
-        transform: scale(1);
+        transform: scale(1) translateY(-50%);
         box-shadow: 0 0 0 5px #E0F2F1;
     }
 
     100% {
-        transform: scale(0.9);
+        transform: scale(0.9) translateY(-50%);
     }
 }
 
@@ -177,24 +161,22 @@
 
 .timeline-img {
     width: 250px;
-    height: 225px;
+    height: auto;
 }
 
 .fast-logo {
     width: 250px;
-    height: 120px;
-    padding-top: 50px;
+    height: auto;
 }
 
 .simDiv-logo {
     width: 280px;
-    height: 170px;
-    padding-top: 30px;
+    height: auto;
 }
 
 .timeline .office-space {
     width: 300px;
-    height: 250px;
+    height: auto;
 }
 
 .timeline-container {
@@ -250,7 +232,26 @@
     margin-bottom: 50px;
 }
 
+.last-timeline-item {
+    display: block;
+    width: 100%;
+    height: 12px;
+    position: relative;
+}
 
+.last-timeline-item span {
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: calc(50% - 23px);
+    background-color: #00796B;
+    border: 10px solid #E0F2F1;
+    top: calc(50% - 23px);
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulse 3s infinite;
+}
 
 
 /* Join Our Team Section */
