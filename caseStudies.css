@@ -359,6 +359,10 @@ header ul li ul li:hover a {
     justify-content: center;
 }
 
+.case-studies-card img {
+    max-width: 100%;
+}
+
 .content {
     padding-top: 40px;
     text-align: left;
