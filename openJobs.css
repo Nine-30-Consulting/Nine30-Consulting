@@ -23,32 +23,29 @@
 /* Open Jobs Page */
 
 .open-jobs-container {
+    background-color: #F0F9EA;
     display: flex;
+    padding-bottom: 30px;
 }
 
 .open-job1 {
-    background-color: #F0F9EA;
-    height: 1150px;
+    height: auto !important;
 }
 
 .open-job2 {
-    background-color: #F0F9EA;
-    height: 1250px;
+    height: auto !important;
 }
 
 .open-job3 {
-    background-color: #F0F9EA;
-    height: 1200px;
+    height: auto !important;
 }
 
 .open-job4 {
-    background-color: #F0F9EA;
-    height: 1050px;
+    height: auto !important;
 }
 
 .open-job5 {
-    background-color: #F0F9EA;
-    height: 1040px;
+    height: auto !important;
 }
 
 .open-job {
@@ -81,7 +78,8 @@
 }
 
 .open-job ul {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    padding-top: 0;
 }
 
 .open-job li {
