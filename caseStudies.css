@@ -359,9 +359,12 @@ header ul li ul li:hover a {
     justify-content: center;
 }
 
-.case-studies-card img {
+.case-studies-card img:not(.cta-arrow) {
+    border: 1px solid #dddee1;
+    margin-bottom: 30px;
     max-width: 100%;
 }
+
 
 .content {
     padding-top: 40px;
