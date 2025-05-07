@@ -1216,6 +1216,16 @@ ul {
 /*
 * Open Jobs Script Styling
 */
+.jobs-container .resumator-basic-widget {
+    padding: 0 30px;
+}
+
+@media screen and (min-width: 992px) {
+    .jobs-container .resumator-basic-widget {
+        padding: 0;
+    }
+}
+
 .jobs-container .resumator-job-title {
     text-decoration: none;
     color: black;
