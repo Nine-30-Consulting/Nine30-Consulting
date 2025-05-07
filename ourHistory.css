@@ -90,7 +90,6 @@
     width: 20px;
     height: 20px;
     background-color: #00796B;
-    border: 9px solid #E0F2F1;
     border-radius: 50%;
     z-index: 1;
     animation: pulse 3s infinite;
@@ -101,29 +100,12 @@
     position: absolute;
     width: 23px;
     height: 23px;
-    left: calc(50% - 23px);
+    left: calc(50% - 12px);
     background-color: #00796B;
-    border: 10px solid #E0F2F1;
     top: calc(50% - 23px);
     border-radius: 50%;
     z-index: 1;
     animation: pulse 3s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.9) translateY(-50%);
-        box-shadow: 0 0 0 0 #e0f2f1c6;
-    }
-
-    70% {
-        transform: scale(1) translateY(-50%);
-        box-shadow: 0 0 0 5px #E0F2F1;
-    }
-
-    100% {
-        transform: scale(0.9) translateY(-50%);
-    }
 }
 
 .left::after {
@@ -134,7 +116,7 @@
     left: -145.3px;
 }
 
-.timeline::after {
+/* .timeline::after {
     content: '';
     position: absolute;
     width: 4px;
@@ -142,6 +124,17 @@
     top: 0;
     bottom: 0;
     left: 50%;
+    margin-left: -3px;
+} */
+
+.timeline .vertical-line {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #E0F2F1;
+    top: 0;
+    bottom: 0;
+    left: 0;
     margin-left: -3px;
 }
 
@@ -159,9 +152,41 @@
     padding-right: 15px;
 }
 
+.timeline-item {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
 .timeline-img {
     width: 250px;
     height: auto;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-up .timeline-item,
+.fade-in-up .timeline-img {
+    animation: .5s both fadeInUp;
+}
+
+.fade-in-up .timeline-item {
+    animation-delay: 0s;
+}
+
+.fade-in-up .timeline-img {
+    animation-delay: .5s;
 }
 
 .fast-logo {
@@ -244,15 +269,24 @@
     position: absolute;
     width: 23px;
     height: 23px;
-    left: calc(50% - 23px);
+    left: calc(50% - 12px);
     background-color: #00796B;
-    border: 10px solid #E0F2F1;
-    top: calc(50% - 23px);
+    top: 50%;
     border-radius: 50%;
     z-index: 1;
     animation: pulse 3s infinite;
+    box-shadow: 0px 0px 1px 1px #E0F2F1;
 }
 
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
 
 /* Join Our Team Section */
 

@@ -1,5 +1,5 @@
 /* Large devices (large laptops, 1440px to 1919px) */
-@media only screen and (min-width: 1440px) and (max-width: 1919px) {
+@media only screen and (min-width: 1440px) {
 
     * {
         margin: 0;
@@ -198,7 +198,6 @@
         justify-content: center;
         align-items: center;
         gap: 75px;
-        padding-top: 180px;
     }
     
     .hero-text h1 {
@@ -222,15 +221,15 @@
     /* Home Page Hero-title-image */
 
     .hero-title-container {
-        position: relative;
+        /* position: relative;
         font-family: 'Termina', Helvetica, Arial;
-        color: #f6fff0;
+        color: #f6fff0; */
         font-size: 45px;
-        filter: contrast(15);
-        margin-bottom: 60px;
+        /* filter: contrast(15);
+        margin-bottom: 60px; */
     }
 
-    .word {
+    /* .word {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -266,7 +265,7 @@
             filter: blur(30px);
             opacity: 0;
         }
-    }
+    } */
     
     
     .hero-picture {
@@ -287,9 +286,8 @@
         justify-content: center;
         align-items: center;
         gap: 55px;
-        padding-top: 0px;
+        padding-top: 175px;
         background-color: #173142;
-        height: 851px;
     }
     
     .hero-text-casestudies h1 {
@@ -368,12 +366,6 @@
     
     
     /* Capabilities Section */
-
-
-    .capabilities-container {
-        height: 1100px;
-        background-color: #F0F9EA;
-    }
 
     .capabilities-title {
         text-align: center;
@@ -1228,15 +1220,14 @@
         height: 20px;
         right: auto;
         background-color: #00796B;
-        border: 9px solid #E0F2F1;
         border-radius: 50%;
-        left: calc(50% - 20px);
+        left: calc(50% - 11px);
         bottom: 0px;
         z-index: 1;
         animation: pulse 3s infinite;
     }
 
-    .timeline-item::after {
+    /* .timeline-item::after {
         content: '';
         position: absolute;
         width: 23px;
@@ -1263,9 +1254,9 @@
         z-index: 1;
         animation: pulse 3s infinite;
         display: none;
-    }
+    } */
 
-    @keyframes pulse {
+    /* @keyframes pulse {
         0% {
             transform: scale(0.9);
             box-shadow: 0 0 0 0 #e0f2f1c6;
@@ -1279,7 +1270,7 @@
         100% {
             transform: scale(0.9);
         }
-    }
+    } */
 
     .left::after {
         right: -177.7px;
@@ -1289,7 +1280,7 @@
         left: -178.7px;
     }
 
-    .timeline::after {
+    /* .timeline::after {
         content: '';
         position: absolute;
         width: 4px;
@@ -1298,7 +1289,7 @@
         bottom: 0;
         left: 50%;
         margin-left: -3px;
-    }
+    } */
 
     .timeline-item:nth-child(even) {
         align-self: flex-end;
@@ -1337,9 +1328,13 @@
     .timeline-container {
         width: 100%;
         position: relative;
-        padding: 80px 0px 80px 0px;
+        padding: 80px 0px 0 0px;
         background-attachment: fixed;
         background-size: cover;
+    }
+
+    .timeline-ending {
+        padding-top: 80px;
     }
 
     .timeline-container:before {
