@@ -324,22 +324,6 @@
     font-family: 'Montserrat', Helvetica, Arial;
 }
 
-.join-our-team-text a {
-    background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-    color: #023B31;
-    font-size: 16px;
-    border-radius: 27px;
-    border-color: transparent;
-    padding: 15px 30px;
-    letter-spacing: 1.25px;
-    text-decoration: none;
-    font-family: 'Termina', Helvetica, Arial;
-}
-
-
-
-
-
 /* Footer Section */
 
 .footer-container-history {

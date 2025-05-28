@@ -161,20 +161,17 @@ header ul li ul li:hover a {
 }
 
 .navbar-button button {
-    background-color: #00796B;
-    color: #F0F9EA;
-    font-size: 16px;
-    border-radius: 27px;
-    border-color: transparent;
+    font-size: 13px;
     padding: 7px 12px;
-    font-family: 'Termina', Helvetica, Arial;
-    letter-spacing: 1.25px;
-   
 }
 
-.navbar-button a {
-    text-decoration: none;
-    color: white;
+.navbar-button button:hover {
+    background-color: #91C75E;
+    color: #023B31;
+}
+
+.navbar-button button:hover a {
+    color: #023B31;
 }
 
 /* Hero TITLE & VIDEO */
@@ -704,11 +701,6 @@ header ul li ul li:hover a {
     font-size: 20px;
 }
 
-.capabilities-card span {
-    color: #71AE47;
-    font-weight: bold;
-}
-
 .card-text img {
     width: 18px;
     height: 18px;
@@ -1018,22 +1010,6 @@ header ul li ul li:hover a {
     font-family: 'Termina', Helvetica, Arial;
 }
 
-.lets-talk-title button {
-    border: 1px solid transparent;
-    border-radius: 20px;
-    padding: 12px;
-    background-color: #023B31;
-}
-
-.lets-talk-title a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: 'Termina', Helvetica, Arial;
-}
-
-
 /* Join Us Section */
 
 .join-us-container {
@@ -1071,26 +1047,22 @@ header ul li ul li:hover a {
     font-family: 'Montserrat', Helvetica, Arial;
 }
 
-.join-us-title button {
-    background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
+.join-us-title button,
+.join-our-team-text button {
+    background-color: #91C75E;
     color: #023B31;
-    font-size: 16px;
-    border-radius: 27px;
-    border-color: transparent;
-    padding: 19px 30px;
-    letter-spacing: 1.25px;
-    margin-left: 10px;
 }
 
-.join-us-title a {
+.join-us-title a,
+.join-our-team-text a {
     text-decoration: none;
     color: #023B31;
-    font-weight: bold;
-    font-family: 'Termina', Helvetica, Arial;
 }
 
-
-
+.join-us-title button:hover,
+.join-our-team-text button:hover {
+    background-color: #71AE47;
+}
 
 /* Footer Section */
 
@@ -1209,15 +1181,74 @@ ul {
 
 .cta-learnmore {
     align-items: center;
-    display: flex;
+    display: inline-flex;
     gap: 5px;
+    text-decoration: none;
+    color: #023B31;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', Helvetica, Arial;
+    position: relative;
+}
+
+.cta-learnmore span::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width .2s ease-in-out;
+}
+
+.cta-learnmore:hover span::after {
+    background-color: #023B31;
+    width: 100%;
+}
+
+.cta-learnmore img {
+    transform: rotate(0);
+    transition: transform .2s ease-in-out;
+}
+
+.cta-learnmore:hover img {
+    transform: rotate(45deg);
 }
 
 /*
 * Open Jobs Script Styling
 */
-.jobs-container .resumator-basic-widget {
+.jobs-container #resumator-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+}
+
+.jobs-container .resumator-job {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: -2px 2px 10px rgba(204, 204, 204, 0.898);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 300px;
+    padding: 30px;
+}
+
+.jobs-container #resumator-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 0 30px;
+}
+
+.jobs-container .resumator-basic-widget {
+    box-sizing: content-box;
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 1214px) {
+    .jobs-container #resumator-jobs {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -1226,10 +1257,73 @@ ul {
     }
 }
 
+.jobs-container .resumator-job-link {
+    background-color: #00796B;
+    color: #F0F9EA;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 27px;
+    border-color: transparent;
+    padding: 10px 16px;
+    font-family: 'Termina', Helvetica, Arial;
+    letter-spacing: 1.25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+}
+
+.jobs-container .resumator-job-link:hover {
+    background-color: #023B31;
+}
+
+.jobs-container .resumator-job-view-details {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+    padding: 0;
+}
+
+.jobs-container .resumator-job-info {
+    font-size: 16px;
+    margin: 0;
+}
+
 .jobs-container .resumator-job-title {
+    border: none;
     text-decoration: none;
     color: black;
     font-size: 22px;
     font-weight: bold;
     font-family: 'Montserrat', Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #00796B;
+    color: #F0F9EA;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 27px;
+    border-color: transparent;
+    padding: 7px 12px;
+    font-family: 'Termina', Helvetica, Arial;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+}
+
+button:hover {
+    background-color: #023B31;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 992px) {
+    button {
+        font-size: 16px;
+    }
 }

@@ -385,14 +385,3 @@
     line-height: 1.5;
     font-family: 'Montserrat', Helvetica, Arial;
 }
-
-.apply-title a {
-    text-decoration: none;
-    color: white;
-    border: 1px solid transparent;
-    padding: 12px 14px;
-    font-size: 26px;
-    border-radius: 20px;
-    background-color: #023B31;
-    font-family: 'Termina', Helvetica, Arial;
-}

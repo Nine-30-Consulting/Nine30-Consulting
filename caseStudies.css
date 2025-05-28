@@ -159,27 +159,6 @@ header ul li ul li:hover a {
     margin-right: 130px;
 }
 
-.navbar-button button {
-    background-color: #00796B;
-    color: #F0F9EA;
-    font-size: 16px;
-    border-radius: 27px;
-    border-color: transparent;
-    padding: 7px 12px;
-    font-family: 'Termina', Helvetica, Arial;
-    letter-spacing: 1.25px;
-   
-}
-
-.navbar-button a {
-    text-decoration: none;
-    color: white;
-}
-
-
-
-
-
 /* Filter Navbar */
 
 .filter-navbar {
@@ -294,11 +273,6 @@ header ul li ul li:hover a {
     font-family: 'Montserrat', Helvetica, Arial;
 }
 
-.case-studies-card span {
-    color: #71AE47;
-    font-weight: bolder;
-}
-
 .case-studies-card h3 {
     font-size: 27px;
     padding: 10px 0px 10px 10px;
@@ -391,15 +365,4 @@ header ul li ul li:hover a {
 
 .caseStudy-button {
     padding-top: 70px;
-}
-
-.caseStudy-button a {
-    text-decoration: none;
-    background-color: #023B31;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 15px;
-    border-radius: 20px;
-    font-family: 'Termina', Helvetica, Arial;
 }

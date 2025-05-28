@@ -528,11 +528,6 @@
         font-size: 14px;
     }
 
-    .capabilities-card span {
-        color: #71AE47;
-        font-weight: bold;
-    }
-
     .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
@@ -659,23 +654,6 @@
         padding: 12px 0px 24px 0px;
         font-family: 'Termina', Helvetica, Arial;
     }
-    
-    .lets-talk-title button {
-        border: 1px solid transparent;
-        border-radius: 20px;
-        padding: 12px;
-        background: #023B31;
-    }
-    
-    .lets-talk-title a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 14px;
-        font-weight: normal;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
 
 
     /* Join Us Section */
@@ -726,27 +704,6 @@
         font-family: 'Montserrat', Helvetica, Arial;
     }
     
-    .join-us-title button {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 12px;
-        font-weight: normal;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 8px 10px;
-        letter-spacing: 1.25px;
-        margin-left: 0px;
-    }
-    
-    .join-us-title a {
-        text-decoration: none;
-        color: #023B31;
-        font-weight: bold;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
     /* Footer Section */
 
     .footer-container {
@@ -1061,12 +1018,7 @@
         border-radius: 5px;
         margin-top: 20px;
     }
-    
-    .capabilities-info-content span {
-        color: rgb(95, 163, 0);
-        font-weight: bold;
-    }
-    
+   
     .capabilities-financial hr {
         width: 30px;
         margin-left: 10px;
@@ -1233,11 +1185,6 @@
         padding-left: 10px;
         margin-bottom: 20px;
         font-family: 'Montserrat', Helvetica, Arial;
-    }
-
-    .case-studies-card span {
-        color: #71AE47;
-        font-weight: bolder;
     }
 
     .case-studies-card h3 {
@@ -1558,20 +1505,6 @@
         padding-bottom: 40px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
-
-    .join-our-team-text a {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 12px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 10px 12px;
-        letter-spacing: 1.1px;
-        text-decoration: none;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
 
     /* Footer Section */
 
@@ -2182,19 +2115,6 @@
         width: 244px;
     }
 
-    .apply-title a {
-        text-decoration: none;
-        color: white;
-        border: 1px solid transparent;
-        padding: 10px 12px;
-        font-size: 16px;
-        border-radius: 20px;
-        background-color: #023B31;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
 
 
 
@@ -2442,17 +2362,6 @@
 
     .caseStudy-button {
         padding-top: 70px;
-    }
-
-    .caseStudy-button a {
-        text-decoration: none;
-        background-color: #023B31;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 15px;
-        border-radius: 20px;
-        font-family: 'Termina', Helvetica, Arial;
     }
 }
 
@@ -3016,11 +2925,6 @@
         font-size: 16px;
     }
 
-    .capabilities-card span {
-        color: #71AE47;
-        font-weight: bold;
-    }
-
     .card-text img, .cta-arrow {
         width: 18px;
         height: 18px;
@@ -3147,23 +3051,6 @@
         padding: 12px 0px 24px 0px;
         font-family: 'Termina', Helvetica, Arial;
     }
-    
-    .lets-talk-title button {
-        border: 1px solid transparent;
-        border-radius: 20px;
-        padding: 12px;
-        background: #023B31;
-    }
-    
-    .lets-talk-title a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 16px;
-        font-weight: normal;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
 
 
     /* Join Us Section */
@@ -3210,7 +3097,7 @@
     }
     
     .join-us-title button {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
+        background-color: #91C75E;
         color: #023B31;
         font-size: 16px;
         font-weight: normal;
@@ -3218,17 +3105,7 @@
         border-color: transparent;
         padding: 12px 15px;
         letter-spacing: 1.25px;
-        margin-left: 5px;
     }
-    
-    .join-us-title a {
-        text-decoration: none;
-        color: #023B31;
-        font-weight: bold;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
 
     /* Footer Section */
 
@@ -3547,11 +3424,6 @@
         margin-top: 10px;
     }
     
-    .capabilities-info-content span {
-        color: rgb(95, 163, 0);
-        font-weight: bold;
-    }
-    
     .capabilities-financial hr {
         width: 60px;
         margin-left: 10px;
@@ -3717,11 +3589,6 @@
         font-size: 18px;
         padding-left: 10px;
         font-family: 'Montserrat', Helvetica, Arial;
-    }
-
-    .case-studies-card span {
-        color: #71AE47;
-        font-weight: bolder;
     }
 
     .case-studies-card h3 {
@@ -4038,19 +3905,6 @@
         padding-bottom: 40px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
-
-    .join-our-team-text a {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 14px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 12px 20px;
-        letter-spacing: 1.25px;
-        text-decoration: none;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
 
    /* Footer Section */
 
@@ -4624,20 +4478,6 @@
         width: 350px;
     }
 
-    .apply-title a {
-        text-decoration: none;
-        color: white;
-        border: 1px solid transparent;
-        padding: 12px 14px;
-        font-size: 20px;
-        border-radius: 20px;
-        background-color: #023B31;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
-
 
 
 
@@ -4876,17 +4716,6 @@
     .caseStudy-button {
         padding-top: 70px;
     }
-
-    .caseStudy-button a {
-        text-decoration: none;
-        background-color: #023B31;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 15px;
-        border-radius: 20px;
-        font-family: 'Termina', Helvetica, Arial;
-    } 
 }
 
 
@@ -5337,22 +5166,6 @@
         font-family: 'Termina', Helvetica, Arial;
     }
 
-    .lets-talk-title button {
-        border: 1px solid transparent;
-        border-radius: 20px;
-        padding: 12px;
-        background-color: #023B31;
-    }
-
-    .lets-talk-title a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 16px;
-        font-weight: normal;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
     /* Join Us Section */
 
     .join-us-container {
@@ -5393,25 +5206,6 @@
         padding-bottom: 34px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
-
-    .join-us-title button {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 16px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 19px 30px;
-        letter-spacing: 1.25px;
-        margin-left: 0px;
-    }
-
-    .join-us-title a {
-        text-decoration: none;
-        color: #023B31;
-        font-weight: bold;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
 
     /* Footer Section */
 
@@ -5690,11 +5484,6 @@
         border-radius: 10px;
     }
     
-    .capabilities-info-content span {
-        color: rgb(95, 163, 0);
-        font-weight: bold;
-    }
-    
     .capabilities-financial hr {
         width: 110px;
         margin-left: 10px;
@@ -5884,11 +5673,6 @@
         font-size: 18px;
         padding-left: 10px;
         font-family: 'Montserrat', Helvetica, Arial;
-    }
-    
-    .case-studies-card span {
-        color: #71AE47;
-        font-weight: bolder;
     }
     
     .case-studies-card h3 {
@@ -6219,19 +6003,6 @@
         padding-bottom: 40px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
-
-    .join-our-team-text a {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 14px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 12px 20px;
-        letter-spacing: 1.25px;
-        text-decoration: none;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
 
    /* Footer Section */
 
@@ -6794,20 +6565,6 @@
         margin: 0 auto;
     }
 
-    .apply-title a {
-        text-decoration: none;
-        color: white;
-        border: 1px solid transparent;
-        padding: 12px 14px;
-        font-size: 18px;
-        border-radius: 20px;
-        background-color: #023B31;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
-
 
 
 
@@ -7037,19 +6794,6 @@
     .caseStudy-button {
         padding-top: 70px;
     }
-    
-    .caseStudy-button a {
-        text-decoration: none;
-        background-color: #023B31;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 15px;
-        border-radius: 20px;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
 }
 
 
@@ -7443,22 +7187,6 @@
         font-family: 'Termina', Helvetica, Arial;
     }
 
-    .lets-talk-title button {
-        border: 1px solid transparent;
-        border-radius: 20px;
-        padding: 12px;
-        background-color: #023B31;
-    }
-
-    .lets-talk-title a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 16px;
-        font-weight: normal;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
     /* Join Us Section */
 
     .join-us-container {
@@ -7499,25 +7227,6 @@
         padding-bottom: 34px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
-
-    .join-us-title button {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 16px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 19px 30px;
-        letter-spacing: 1.25px;
-        margin-left: 0px;
-    }
-
-    .join-us-title a {
-        text-decoration: none;
-        color: #023B31;
-        font-weight: bold;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
 
     /* Footer Section */
 
@@ -7757,11 +7466,6 @@
         border-radius: 10px;
     }
     
-    .capabilities-info-content span {
-        color: rgb(95, 163, 0);
-        font-weight: bold;
-    }
-    
     .capabilities-financial hr {
         width: 280px;
         margin-left: 10px;
@@ -7945,11 +7649,6 @@
         font-size: 18px;
         padding-left: 10px;
         font-family: 'Montserrat', Helvetica, Arial;
-    }
-    
-    .case-studies-card span {
-        color: #71AE47;
-        font-weight: bolder;
     }
     
     .case-studies-card h3 {
@@ -8251,21 +7950,6 @@
         font-family: 'Montserrat', Helvetica, Arial;
     }
     
-    .join-our-team-text a {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 18px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 15px 30px;
-        letter-spacing: 1.25px;
-        text-decoration: none;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
-
     /* Footer Section */
 
     .footer-container-history {
@@ -8824,20 +8508,6 @@
         text-align: center;
     }
 
-    .apply-title a {
-        text-decoration: none;
-        color: white;
-        border: 1px solid transparent;
-        padding: 12px 14px;
-        font-size: 26px;
-        border-radius: 20px;
-        background-color: #023B31;
-        font-family: 'Termina', Helvetica, Arial;
-        margin-left: 32%;
-    }
-
-
-
     /* Navbar Bottom */
 
     .navbar-bottom-container {
@@ -9096,18 +8766,6 @@
     .caseStudy-button {
         padding-top: 70px;
     }
-    
-    .caseStudy-button a {
-        text-decoration: none;
-        background-color: #023B31;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 15px;
-        border-radius: 20px;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
 }
 
 
@@ -9307,25 +8965,6 @@
         display: none;
     }
     
-    .navbar-button button {
-        background-color: #00796B;
-        color: #F0F9EA;
-        font-size: 11px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 7px 12px;
-        font-family: 'Termina', Helvetica, Arial;
-        letter-spacing: 1.25px;
-       
-    }
-    
-    .navbar-button a {
-        text-decoration: none;
-        color: white;
-    }
-    
-
-
     /* Hero TITLE & VIDEO */
 
     .hero-title-image {
@@ -9698,22 +9337,6 @@
         font-family: 'Termina', Helvetica, Arial;
     }
     
-    .lets-talk-title button {
-        border: 1px solid transparent;
-        border-radius: 20px;
-        padding: 12px;
-        background-color: #023B31;
-    }
-    
-    .lets-talk-title a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 16px;
-        font-weight: normal;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-    
-    
     /* Join Us Section */
     
     .join-us-container {
@@ -9758,28 +9381,6 @@
         font-family: 'Montserrat', Helvetica, Arial;
     }
     
-    .join-us-title button {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 14px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 12px 15px;
-        letter-spacing: 1.25px;
-        margin-left: 10px;
-    }
-    
-    .join-us-title a {
-        text-decoration: none;
-        color: #023B31;
-        font-weight: bold;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
-
-
     /* Footer Section */
 
     .footer-container {
@@ -10058,12 +9659,7 @@
         width: 190px;
         border-radius: 10px;
     }
-    
-    .capabilities-info-content span {
-        color: rgb(95, 163, 0);
-        font-weight: bold;
-    }
-    
+   
     .capabilities-financial hr {
         width: 180px;
         margin-left: 10px;
@@ -10210,11 +9806,6 @@
         font-size: 18px;
         padding-left: 10px;
         font-family: 'Montserrat', Helvetica, Arial;
-    }
-
-    .case-studies-card span {
-        color: #71AE47;
-        font-weight: bolder;
     }
 
     .case-studies-card h3 {
@@ -10510,21 +10101,6 @@
         padding-bottom: 40px;
         font-family: 'Montserrat', Helvetica, Arial;
     }
-
-    .join-our-team-text a {
-        background: transparent linear-gradient(270deg, #B1D98C 0%, #91C75E 100%) 0% 0% no-repeat padding-box;
-        color: #023B31;
-        font-size: 14px;
-        border-radius: 27px;
-        border-color: transparent;
-        padding: 15px 30px;
-        letter-spacing: 1.25px;
-        text-decoration: none;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
 
     /* Footer Section */
 
@@ -11068,19 +10644,6 @@
         font-family: 'Montserrat', Helvetica, Arial;
     }
 
-    .apply-title a {
-        text-decoration: none;
-        color: white;
-        border: 1px solid transparent;
-        padding: 12px 14px;
-        font-size: 18px;
-        border-radius: 20px;
-        background-color: #023B31;
-        font-family: 'Termina', Helvetica, Arial;
-    }
-
-
-
 
 
 
@@ -11311,17 +10874,6 @@
 
     .caseStudy-button {
         padding-top: 70px;
-    }
-
-    .caseStudy-button a {
-        text-decoration: none;
-        background-color: #023B31;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 15px;
-        border-radius: 20px;
-        font-family: 'Termina', Helvetica, Arial;
     }
 }
 

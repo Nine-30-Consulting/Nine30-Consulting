@@ -77,11 +77,6 @@
     border-radius: 10px;
 }
 
-.capabilities-info-content span {
-    color: rgb(95, 163, 0);
-    font-weight: bold;
-}
-
 .capabilities-financial hr {
     width: 280px;
     margin-left: 10px;
