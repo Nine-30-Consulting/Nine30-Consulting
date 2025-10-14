@@ -12,11 +12,11 @@
 
         <script src="https://use.fontawesome.com/14b8e0b9e5.js"></script>
 
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="aboutUs.css">
-        <link rel="stylesheet" href="capabilities.css">
-        <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="responsive2.css">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link type="text/css" rel="stylesheet" href="aboutUs.css">
+        <link type="text/css" rel="stylesheet" href="capabilities.css">
+        <link type="text/css" rel="stylesheet" href="responsive.css">
+        <link type="text/css" rel="stylesheet" href="responsive2.css">
     </head>
 
     <body>
@@ -239,41 +239,8 @@
 
 
         <!-- JavaScript -->
-
-        <script>
-
-
-            // Mobile Menu //
-
-            let menuToggle = document.querySelector('.menuToggle');
-            let header = document.querySelector('header');
-                menuToggle.onclick = function(){
-                header.classList.toggle('active');
-            }
-
-
-
-            // Countdown Timer 9.30 //
-
-            var countDownDate = new Date("September 30, 2025 06:00:00").getTime();
-            var x = setInterval(function() {
-
-            var now = new Date().getTime();
-
-            var distance = countDownDate - now;
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("demo").innerHTML = days + " ";
-
-            if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-
-        </script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
