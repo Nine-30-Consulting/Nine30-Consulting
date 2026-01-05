@@ -638,7 +638,7 @@
     }
     
     .nine30-info img {
-        width: 237px;
+        width: auto;
         height: 89px;
         margin-bottom: 32px;
     }
@@ -1399,7 +1399,7 @@
     }
     
     .nine30-info img {
-        width: 237px;
+        width: auto;
         height: 89px;
         margin-bottom: 32px;
     }

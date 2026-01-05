@@ -766,7 +766,7 @@
     }
     
     .nine30-info img {
-        width: 125px;
+        width: auto;
         height: 70px;
         margin-top: 0px;
     }
@@ -1568,7 +1568,7 @@
     }
     
     .nine30-info img {
-        width: 125px;
+        width: auto;
         height: 70px;
         margin-top: 0px;
     }
@@ -3169,7 +3169,7 @@
     }
     
     .nine30-info img {
-        width: 125px;
+        width: auto;
         height: 70px;
         margin-top: 0px;
     }
@@ -3968,7 +3968,7 @@
     }
 
     .nine30-info img {
-        width: 125px;
+        width: auto;
         height: 70px;
         margin-top: 0px;
     }
@@ -5260,7 +5260,7 @@
     }
     
     .nine30-info img {
-        width: 150px;
+        width: auto;
         height: 70px;
         margin-top: 0px;
         margin-bottom: 20px;
@@ -6057,7 +6057,7 @@
     }
 
     .nine30-info img {
-        width: 150px;
+        width: auto;
         height: 70px;
         margin-top: 0px;
         margin-bottom: 20px;
@@ -7280,7 +7280,7 @@
     }
     
     .nine30-info img {
-        width: 155px;
+        width: auto;
         height: 90px;
         margin-top: 0px;
         margin-bottom: 20px;
@@ -8002,7 +8002,7 @@
     }
     
     .nine30-info img {
-        width: 155px;
+        width: auto;
         height: 90px;
         margin-top: 0px;
         margin-bottom: 20px;
@@ -9430,7 +9430,7 @@
     }
     
     .nine30-info img {
-        width: 150px;
+        width: auto;
         height: 60px;
         margin-bottom: 32px;
     }
@@ -10151,7 +10151,7 @@
     }
     
     .nine30-info img {
-        width: 150px;
+        width: auto;
         height: 60px;
         margin-bottom: 32px;
     }
@@ -10740,13 +10740,9 @@
         background-color: rgb(231, 240, 216, 0.8);
     }
     
-    .jobs-title {
+    .jobs-intro-container h2 {
         font-size: 35px;
-        font-weight: normal;
-        text-align: center;
-        color:#023B31;
-        padding-top: 75px;
-        font-family: 'Termina', Helvetica, Arial;
+        line-height: 35px;
     }
     
     .jobs-container hr {

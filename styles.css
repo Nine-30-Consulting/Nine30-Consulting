@@ -1113,7 +1113,7 @@ header ul li ul li:hover a {
 }
 
 .nine30-info img {
-    width: 237px;
+    width: auto;
     height: 89px;
     margin-bottom: 32px;
 }
@@ -1230,7 +1230,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    width: 300px;
     padding: 30px;
 }
 
@@ -1320,6 +1319,12 @@ button:hover {
 button a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 420px) {
+    .jobs-container .resumator-job {
+        width: 250px;
+    }
 }
 
 @media screen and (min-width: 992px) {

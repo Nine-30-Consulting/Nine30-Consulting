@@ -127,13 +127,25 @@
     background-color: rgb(231, 240, 216, 0.8);
 }
 
-.jobs-title {
+.jobs-intro-container {
+    max-width: 493px;
+    text-align: center;
+}
+
+.jobs-intro-container h2 {
     font-size: 40px;
-    font-weight: normal;
     text-align: center;
     color:#023B31;
-    padding-top: 65px;
     font-family: 'Termina', Helvetica, Arial;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 18px;
+}
+
+.jobs-intro-container p {
+    font-size: 16px;
+    font-family: 'Montserrat', Helvetica, Arial;
+    line-height: 23px;
 }
 
 .jobs-container hr {
@@ -182,4 +194,106 @@
     font-size: 22px;
     font-weight: bold;
     font-family: 'Montserrat', Helvetica, Arial;
+}
+
+.jobs-eeo-container {
+    padding: 80px 0;
+}
+
+.jobs-eeo-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial;
+    gap: 35px;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.jobs-eeo-wrapper p {
+    font-size: 16px;
+}
+
+.jobs-eeo-wrapper h3 {
+    font-size: 27px;
+    margin-bottom: 6.5px;
+}
+
+.need-assistance, .eeo {
+    flex: 50%;
+}
+
+.need-assistance {
+    background: url('./assistance_graphic.png') no-repeat;
+    background-color: #173142;
+    background-position: bottom left;
+    border-radius: 20px;
+    color: #ffffff;
+    min-height: 444px;
+    padding: 50px 40px 40px;
+}
+
+.need-assistance a,
+.need-assistance p a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.eeo {
+    background-color: #E0F2F1;
+    border-radius: 20px;
+    padding: 50px 40px 40px;
+}
+
+.eeo h3 {
+    color: #023B31;
+}
+
+.eeo p {
+    margin-bottom: 28px;
+}
+
+.eeo-download a {
+    display: block;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 12px 48px;
+    margin-bottom: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: border .2s ease-in-out;
+}
+
+.eeo-download a:hover {
+    border: 2px solid #80CBC4;
+    text-decoration: none;
+}
+
+.eeo-download p {
+    color: #023B31;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.eeo-download span {
+    color: #00796B;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1050px) {
+    .jobs-eeo-wrapper {
+        align-items: stretch;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1408px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .jobs-eeo-wrapper p,
+    .eeo-download span {
+        font-size: 12px;
+    }
 }
